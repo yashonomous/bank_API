@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BankDetails.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ namespace BankDetails.Controllers
 
         /*methos to get all branches in db. by default it gives 50 entries as response. limit can be changed using limit & offset*/
         // GET: api/branches
-        [HttpGet]
+        [HttpGet, Authorize]
         public IActionResult GetBranches(int? offset, int?limit)
         {
             if (!ModelState.IsValid)
@@ -42,7 +43,7 @@ namespace BankDetails.Controllers
 
         /*methos to get a bank by ifsc code*/
         // GET: api/branches/ifsc
-        [HttpGet("byIFSC")]
+        [HttpGet("byIFSC"), Authorize]
         public IActionResult GetBranchByIFSC(string ifsc)
         {
             if (!ModelState.IsValid)
@@ -61,7 +62,7 @@ namespace BankDetails.Controllers
         }
 
         // GET: api/branches/byName&City?name=&city=
-        [HttpGet("byName&City")]
+        [HttpGet("byName&City"), Authorize]
         public IActionResult GetBranchByIFSC(string name, string city, int? offset, int? limit)
         {
             if (!ModelState.IsValid)

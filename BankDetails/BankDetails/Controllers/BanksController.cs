@@ -25,8 +25,7 @@ namespace BankDetails.Controllers
 
         /*methos to get all banks in db. by default it gives 50 entries as response. limit can be changed using limit & offset*/
         // GET: api/Banks
-        [HttpGet]
-        [Authorize(AuthenticationSchemes = "Bearer")]
+        [HttpGet, Authorize]
         public IEnumerable<Bank> GetBanks(int? offset, int? limit)
         {
             return _context.Banks.
@@ -35,7 +34,7 @@ namespace BankDetails.Controllers
 
         /*methos to get a bank in db by ID*/
         // GET: api/Banks/5
-        [HttpGet("byId")]
+        [HttpGet("byId"), Authorize]
         public IActionResult GetBank(int id)
         {
             if (!ModelState.IsValid)

@@ -29,7 +29,11 @@ namespace BankDetails.Controllers
             if (user != null)
             {
                 var tokenString = BuildToken(user);
-                response = Ok(new { token = tokenString });
+                response = Ok(new { token = tokenString, expiry_time= DateTime.Now.AddDays(5).ToString("dddd, dd MMMM yyyy hh:mm tt") });
+            }
+            else
+            {
+                response = NotFound("User not found.");
             }
 
             return response;
@@ -42,9 +46,9 @@ namespace BankDetails.Controllers
 
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],
               _config["Jwt:Issuer"],
-              expires: DateTime.Now.AddMinutes(30),
+              expires: DateTime.Now.AddDays(5),
               signingCredentials: creds);
-
+            
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
@@ -52,9 +56,9 @@ namespace BankDetails.Controllers
         {
             UserModel user = null;
 
-            if (login.Username == "mario" && login.Password == "secret")
+            if (login.Username == "admin" && login.Password == "admin")
             {
-                user = new UserModel { Name = "Mario Rossi", Email = "mario.rossi@domain.com" };
+                user = new UserModel { Name = "Admin", Email = "admin.admin@admin.com" };
             }
             return user;
         }

@@ -41,7 +41,8 @@ namespace BankDetails
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = Configuration["Jwt:Issuer"],
                     ValidAudience = Configuration["Jwt:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])),
+                    ClockSkew = TimeSpan.Zero
                 };
             });
 
@@ -63,8 +64,9 @@ namespace BankDetails
                 app.UseHsts();
             }
 
-            app.UseAuthentication();
+            
             app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseMvc();
         }
     }
