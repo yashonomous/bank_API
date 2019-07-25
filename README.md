@@ -1,7 +1,9 @@
 # bank_API
- Gives details about various banks given various API parameters.
- Used Postgres as my backend db.
- I have also attached a dump file of my Postgres db for furthur usage.
+ Gives details about various banks given various API parameters.<br/>
+ 
+ Used Postgres as my backend db.<br/>
+ 
+ I have also attached a dump file of my Postgres db for furthur usage.<br/>
  
  
 My APIs provide below mentioned functionalities-<br/>
