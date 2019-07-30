@@ -1,7 +1,7 @@
-//FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
-//WORKDIR /app
-//COPY . .
-//CMD ASPNETCORE_URLS=http://*:$PORT dotnet BankDetails.dll
+#FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+#WORKDIR /app
+#COPY . .
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet BankDetails.dll
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
 WORKDIR /app
