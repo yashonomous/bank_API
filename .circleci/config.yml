@@ -11,7 +11,7 @@ jobs:
          docker build -t bank-details-api -f Dockerfile .
      # deploy the image
      - run: |         
-         echo "$DOCKERHUB_PASS" | docker login --username=$HEROKU_USERNAME --password=$HEROKU_PASSWORD registry.heroku.com
+         echo "$DOCKERHUB_PASS" | docker login --username $HEROKU_USERNAME --password $HEROKU_PASSWORD registry.heroku.com
          docker tag aspnetapp registry.heroku.com/bank-details-api/web
          docker push registry.heroku.com/bank-details-api/web                
          curl https://cli-assets.heroku.com/install.sh | sh
