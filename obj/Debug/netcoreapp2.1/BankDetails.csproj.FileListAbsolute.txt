@@ -11,4 +11,4 @@ C:\Users\A\source\repos\BankDetails\BankDetails\obj\Debug\netcoreapp2.1\BankDeta
 C:\Users\A\source\repos\BankDetails\BankDetails\bin\Debug\netcoreapp2.1\BankDetails.pdb
 C:\Users\A\source\repos\BankDetails\BankDetails\obj\Debug\netcoreapp2.1\BankDetails.dll
 C:\Users\A\source\repos\BankDetails\BankDetails\obj\Debug\netcoreapp2.1\BankDetails.pdb
-C:\Users\A\source\repos\BankDetails\BankDetails\obj\Debug\netcoreapp2.1\BankDetails.csprojAssemblyReference.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

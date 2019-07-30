@@ -1,0 +1,15 @@
+C:\Users\A\source\repos\BankDetails\BankDetails\bin\Release\netcoreapp2.1\BankDetails.deps.json
+C:\Users\A\source\repos\BankDetails\BankDetails\bin\Release\netcoreapp2.1\BankDetails.runtimeconfig.json
+C:\Users\A\source\repos\BankDetails\BankDetails\bin\Release\netcoreapp2.1\BankDetails.runtimeconfig.dev.json
+C:\Users\A\source\repos\BankDetails\BankDetails\bin\Release\netcoreapp2.1\BankDetails.dll
+C:\Users\A\source\repos\BankDetails\BankDetails\bin\Release\netcoreapp2.1\BankDetails.pdb
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.csprojAssemblyReference.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.csproj.CoreCompileInputs.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.RazorAssemblyInfo.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.RazorAssemblyInfo.cs
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.AssemblyInfoInputs.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.AssemblyInfo.cs
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.RazorTargetAssemblyInfo.cache
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.dll
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\BankDetails.pdb
+C:\Users\A\source\repos\BankDetails\BankDetails\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
